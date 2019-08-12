@@ -33,6 +33,7 @@ public class Account implements UserDetails {
 
     @JsonIgnore
     @NotEmpty
+    @Column(name = "hashed_password", length = 60)
     private String password;
 
     @ManyToMany(

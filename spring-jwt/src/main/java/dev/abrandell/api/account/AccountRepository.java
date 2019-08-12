@@ -19,4 +19,7 @@ public interface AccountRepository extends JpaRepository<Account, Long> {
         + "WHERE a.username = :username")
     @Transactional(readOnly = true)
     Optional<Account> fetchByUsername(@Param("username") final String username);
+
+    @Transactional(readOnly = true)
+    boolean existsByUsername(String username);
 }
