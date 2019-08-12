@@ -1,6 +1,7 @@
-package dev.abrandell.api.security;
+package dev.abrandell.api.account;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import dev.abrandell.api.security.Authority;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

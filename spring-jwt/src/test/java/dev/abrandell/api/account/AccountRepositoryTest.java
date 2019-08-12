@@ -1,5 +1,6 @@
-package dev.abrandell.api.security;
+package dev.abrandell.api.account;
 
+import dev.abrandell.api.security.Authority;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

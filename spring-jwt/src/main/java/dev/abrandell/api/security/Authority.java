@@ -34,7 +34,7 @@ public class Authority implements GrantedAuthority {
     @NaturalId
     private String authority;
 
-    Authority(@NotEmpty String authority) {
+    public Authority(@NotEmpty String authority) {
         this.authority = authority;
     }
 

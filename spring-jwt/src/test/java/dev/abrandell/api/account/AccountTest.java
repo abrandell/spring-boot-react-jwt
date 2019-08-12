@@ -1,5 +1,6 @@
-package dev.abrandell.api.security;
+package dev.abrandell.api.account;
 
+import dev.abrandell.api.security.Authority;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,7 @@ class AccountTest {
                     () -> {
                         Set<Authority> authorities = account.getAuthorities();
                         assertTrue(authorities.size() > 0,
-                            "Account authorities were not persisted +");
+                            "Account authorities were not persisted");
                     });
             });
     }
