@@ -1,7 +1,6 @@
 ## Spring Boot/React JWT
 
-This project was created to show how to easily implement JWT authentication
-for your Spring Boot/React apps.
+A simple JWT auth implementation using Spring Boot and React.
 
 Versions: 
 ```
