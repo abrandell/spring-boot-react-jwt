@@ -10,7 +10,7 @@ sent to the React client as an HttpOnly cookie.
 
 On successful authentication, the response headers from the API are:
 ```
-CSRF: d770603a-5aaa-40e6-b7d2-5178e1373b2d
+CSRF: d7712-c3...d <java.util.UUID.random>
 Set-Cookie: JWT=eyJ... 9w; HttpOnly
 
 ```
