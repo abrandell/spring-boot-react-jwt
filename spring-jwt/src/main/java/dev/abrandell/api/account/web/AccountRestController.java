@@ -3,6 +3,8 @@ package dev.abrandell.api.account.web;
 import dev.abrandell.api.account.Account;
 import dev.abrandell.api.account.AccountService;
 import dev.abrandell.api.account.AuthRequest;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,5 +29,10 @@ public class AccountRestController {
         produces = APPLICATION_JSON_VALUE)
     public Account register(@Valid @RequestBody AuthRequest authRequest) {
         return accountService.createAccount(authRequest);
+    }
+
+    @GetMapping(value = "/me", produces = APPLICATION_JSON_VALUE)
+    public Account account(@AuthenticationPrincipal Account current) {
+        return current;
     }
 }
