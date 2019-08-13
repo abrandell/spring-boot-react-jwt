@@ -22,12 +22,11 @@ public class AuthRequest {
     @NotBlank
     String password;
 
-
     @Override
     public String toString() {
         return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
             .append("username", username)
-            .append("password", password)
+            .append("password", "[HIDDEN]")
             .toString();
     }
 }
